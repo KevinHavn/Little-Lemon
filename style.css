@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.justify-c-center {
+    justify-content:center;
+}
+.row {
+    flex-direction: row;
+}
+header {
+    background:pink;
+    justify-content: center;
+}
+nav, ul {
+    width: 100%;
+    display:flex;
+}
+nav ul {
+    justify-content: space-evenly;
+    font-size: 1.75rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+.logo {
+    max-width:40%;
+}
+
+
+/*
+Google Font Classes
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  /*
