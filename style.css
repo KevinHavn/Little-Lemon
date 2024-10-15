@@ -1,60 +1,109 @@
 * {
-    margin: 0;
-    list-style: none;
+	margin: 0;
+	list-style: none;
+}
+html,
+body,
+main {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #faf3e0;
 }
 img {
-    max-width: 100%;
+	max-width: 100%;
+}
+p {
+	font-family: arial;
 }
 .flex {
-    display: flex;
+	display: flex;
 }
 .column {
-    flex-direction: column;
-}
-.justify-c-center {
-    justify-content:center;
+	display: flex;
+	flex-direction: column;
 }
 .row {
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
-header {
-    background:pink;
-    justify-content: center;
+.justify-c-center {
+	justify-content: center;
 }
-nav, ul {
-    width: 100%;
-    display:flex;
+header,
+footer {
+	background: #d0d8b1;
+	justify-content: center;
+	padding: 1rem;
 }
-nav ul {
-    justify-content: space-evenly;
-    font-size: 1.75rem;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
+footer {
+	align-items: center;
+	gap: 1rem;
 }
-
+nav,
+ul {
+	width: 100%;
+	display: flex;
+}
+nav ul,
+h2 {
+	justify-content: space-evenly;
+	font-size: 1.75rem;
+}
+li a,
+li a:active,
+li a:visited,
+li a:link {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 400;
+	color: black;
+}
+li a:hover {
+	color: gray;
+}
 .logo {
-    max-width:40%;
+	max-width: 40%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.footerLogo {
+	max-width: 4%;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 12rem;
+	margin-right: 12rem;
+}
+main div,
+main article {
+	background: #faf3e0;
+	border-radius: 8px;
+}
+.mealContainer img,
+.welcomeContainer img {
+	border-radius: 8px 8px 0 0;
+}
+.welcomeContainer {
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+}
+.welcomeContainer h2 {
+	text-align: center;
 }
 
+.welcomeContainer,
+.mealContainer {
+	box-shadow: 0px 4px 14px gray;
+}
 
-/*
-Google Font Classes
-
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  /*
+.welcomeContainer:hover,
+.mealContainer:hover {
+	box-shadow: 0px 4px 14px lightgray;
+}
